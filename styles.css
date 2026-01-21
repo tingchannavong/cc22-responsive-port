@@ -120,10 +120,17 @@ footer p {
     color: grey;
     font-size: 11pt;
 }
-
 @media screen and (min-width: 800px) {
     .links {
         visibility: visible;
+        display: flex;
+        gap: 20px;
+        justify-content: end;
+        padding: 1em 1em 0 0;
+    }
+    .links a {
+        text-decoration: none;
+        color: black;
     }
     .menu {
         visibility: hidden;
