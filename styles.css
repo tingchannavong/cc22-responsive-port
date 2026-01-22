@@ -122,6 +122,12 @@ nav {
     font-size: 11pt;
     padding: 3px;
 }
+    .description-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0.8rem;
+    }
 /* FOOTER AREA */
 footer {
     width: 100%;
@@ -142,6 +148,46 @@ footer p {
     color: grey;
     font-size: 11pt;
 }
+
+/* For tablet screen size below */
+@media screen and (min-width: 580px) {
+
+    .card-container {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+    .work-card {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5em;
+        margin: 1em 2em;
+    }
+    .work-card img {
+        width: 200px;
+    }
+    .title-line {
+        padding-left: 2em;
+    }
+    .links {
+        visibility: visible;
+        display: flex;
+        gap: 20px;
+        justify-content: end;
+        padding: 1em 1em 0 0;
+        margin-right: 1em;;
+    }
+    .links a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    .menu {
+        visibility: hidden;
+    }
+}
+
 /* For computer screen size below */
 @media screen and (min-width: 770px) {
     nav {
@@ -187,9 +233,9 @@ footer p {
         margin: 2em 0 0 0;
     }
     .card-container {
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
     }
     .work-card {
         display: flex;
@@ -198,12 +244,6 @@ footer p {
     }
     .work-card img {
         width: 200px;
-    }
-    .description-box {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 0.5em;
     }
     .card-container-2 {
         display: flex;
@@ -214,8 +254,4 @@ footer p {
     .title-line h2 {
         font-size: 2em;
     }
-}
-
-/* For tablet screen size below */
-@media screen and (min-width: 430px) {
 }
