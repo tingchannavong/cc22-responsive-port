@@ -9,6 +9,7 @@ html {
 body {
         line-height: 1.5;
 }
+/* Start with mobile screen size below */
 .container {
     padding: 1rem;
 }
@@ -18,6 +19,9 @@ nav {
 }
 .links {
     visibility: hidden;
+}
+.links a:hover {
+    color: hotpink;
 }
 .menu {
     all: unset;
@@ -125,6 +129,7 @@ footer p {
     color: grey;
     font-size: 11pt;
 }
+/* For computer screen size below */
 @media screen and (min-width: 770px) {
     nav {
         background-color: white;
@@ -189,5 +194,6 @@ footer p {
 
 }
 
+/* For tablet screen size below */
 @media screen and (min-width: 430px) {
 }
